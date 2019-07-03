@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/sparkleshare_account">
+        <Preference
+                android:key="@string/settings_release_account"
+                android:title="@string/settings_release_account"/>
+        <CheckBoxPreference
+                android:key="@string/settings_hide_files_folders"
+                android:title="@string/settings_hide_files_folders"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/info">
+        <Preference
+                android:key="@string/app_version"
+                android:title="@string/app_version"
+                android:enabled="false"
+                android:summary="@string/version"/>
+    </PreferenceCategory>
+</PreferenceScreen>

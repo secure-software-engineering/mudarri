@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/splash">
+    <LinearLayout
+            android:id="@+id/dummy_container"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+        <ImageView
+                android:src="@drawable/sparkleshare_logo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        <TextView
+                style="@style/SplashText"
+                android:text="@string/welcome_sparkleshare"
+                android:layout_width="fill_parent"
+                android:paddingTop="0px"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal|top"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+            android:text="@string/get_started"
+            android:id="@+id/textView1"
+            android:textColor="@color/half_transparent"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center" android:textSize="16dp" android:layout_marginBottom="10dp"></TextView>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_margin="1dp"
+            android:id="@+id/btn_scan_qrcode"
+            android:onClick="buttonClick"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_qrcode"
+            android:textColor="@color/grey"></Button>
+    <Button
+            android:id="@+id/btn_insert_linkcode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:onClick="buttonClick"
+            android:text="@string/setup_account"
+            android:textColor="@color/grey"/>
+</LinearLayout>

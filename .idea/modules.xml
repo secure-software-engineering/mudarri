@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Automaton/Automaton.iml" filepath="$PROJECT_DIR$/Automaton/Automaton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SC1_Plugin/SC1_Plugin.iml" filepath="$PROJECT_DIR$/SC1_Plugin/SC1_Plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TaintAnalysis/src/TaintAnalysis.iml" filepath="$PROJECT_DIR$/TaintAnalysis/src/TaintAnalysis.iml" />
+    </modules>
+  </component>
+</project>

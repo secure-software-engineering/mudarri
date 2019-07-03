@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/andbatdog/!svn/ver/22/trunk/AndroidBatteryDog/AndroidBatteryDog/src/net/sf/andbatdog/batterydog
+END
+Log.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/andbatdog/!svn/ver/15/trunk/AndroidBatteryDog/AndroidBatteryDog/src/net/sf/andbatdog/batterydog/Log.java
+END
+BatteryDog.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/andbatdog/!svn/ver/15/trunk/AndroidBatteryDog/AndroidBatteryDog/src/net/sf/andbatdog/batterydog/BatteryDog.java
+END
+BatteryDog_Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/andbatdog/!svn/ver/15/trunk/AndroidBatteryDog/AndroidBatteryDog/src/net/sf/andbatdog/batterydog/BatteryDog_Service.java
+END
+BatteryGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/andbatdog/!svn/ver/22/trunk/AndroidBatteryDog/AndroidBatteryDog/src/net/sf/andbatdog/batterydog/BatteryGraph.java
+END

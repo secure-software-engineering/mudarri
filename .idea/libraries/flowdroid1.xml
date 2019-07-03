@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="flowdroid1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TaintAnalysis/lib/flowdroid.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

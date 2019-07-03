@@ -1,0 +1,61 @@
+<idea-plugin>
+    <id>de.upb.SC1_Plugin</id>
+    <name>SC1 Plugin</name>
+    <version>1.0</version>
+    <vendor email="lisa.nguyen@upb.de"
+            url="https://www.hni.uni-paderborn.de/swt/">Paderborn University
+    </vendor>
+
+    <description>Plugin for SC1.</description>
+
+    <change-notes>No change notes for the moment.</change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Results view -->
+        <toolWindow id="SC1 taint analysis" anchor="bottom"
+                    factoryClass="ui.ResultsView"
+                    icon="Icons.SC1_RUN"
+                    secondary="false"/>
+
+        <!-- Markers and annotations -->
+        <inspectionToolProvider
+                implementation="inspections.InspectionProvider"/>
+        <!--codeInsight.lineMarkerProvider language="JAVA"
+                                        implementationClass="markers.ErrorMarkerProvider"/-->
+    </extensions>
+
+    <actions>
+        <!-- Toolbar from the results view -->
+        <group id="SC1_plugin.results.toolbar" text="Results toolbar"
+               popup="false"/>
+
+        <!-- Help button for the toolbar -->
+        <action id="SC1_plugin.help"
+                class="actions.HelpAction"
+                text="Help"
+                description="Help for SC1 plugin"
+                icon="Icons.HELP">
+            <add-to-group group-id="SC1_plugin.results.toolbar" anchor="last"/>
+        </action>
+
+        <!-- Run analysis button for the toolbar, in the Analyze menu, and as a shortcut -->
+        <action id="SC1_plugin.run" class="actions.AnalyzeAction"
+                text="Run SC1 analysis" icon="Icons.SC1_RUN"
+                description="Run SC1 taint analysis">
+            <keyboard-shortcut first-keystroke="control alt A"
+                               keymap="$default"/>
+            <add-to-group group-id="SC1_plugin.results.toolbar" anchor="first"/>
+            <add-to-group group-id="AnalyzeMenu" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
